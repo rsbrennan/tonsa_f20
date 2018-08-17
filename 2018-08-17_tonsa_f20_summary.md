@@ -30,16 +30,15 @@ Across the genome, there is no reduction in Hp in the HHHH line.
 | HHHH_F1_REP3 | 0.304 |
 | HHHH_F1_REP4 | 0.303 |
 
-![alt text](https://raw.githubusercontent.com/rsbrennan/tonsa_f20/master/figures/heterozygosity.png)
-
 <img src="https://raw.githubusercontent.com/rsbrennan/tonsa_f20/master/figures/heterozygosity.png" width="500">
 
 
 The low end of quantiles also do not differ:
 
-![alt text](https://raw.githubusercontent.com/rsbrennan/tonsa_f20/master/figures/het.01_quantile.png)  
+<img src="https://raw.githubusercontent.com/rsbrennan/tonsa_f20/master/figures/het.01_quantile.png" width="500">
 
-![alt text](https://raw.githubusercontent.com/rsbrennan/tonsa_f20/master/figures/het.05_quantile.png)
+<img src="https://raw.githubusercontent.com/rsbrennan/tonsa_f20/master/figures/het.05_quantile.png" width="500">
+
 
 
 Next, looking at the lower 0.05 quantile of heterozygosity for each line. So lowest 395 genes
@@ -52,8 +51,7 @@ Within HHHH, 146 are present in all.
 
 ## pi in 1kb windows
 
-
-![alt text](https://raw.githubusercontent.com/rsbrennan/tonsa_f20/master/figures/1kb.pi.hist.png)
+<img src="https://raw.githubusercontent.com/rsbrennan/tonsa_f20/master/figures/1kb.pi.hist.png" width="500">
 
 
 
