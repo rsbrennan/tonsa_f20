@@ -41,11 +41,21 @@ The low end of quantiles also do not differ:
 
 
 
-Next, looking at the lower 0.05 quantile of heterozygosity for each line. So lowest 395 genes
+Looking at the lower 0.05 quantile of heterozygosity for each line. So lowest 395 genes
 
-Within AAAA, 138 are present in all.
-Within HHHH, 146 are present in all.
-87 are consistent across all lines. 
+The follwoing table is the number of genes that overlap between 2, 3, or 4 lines in both
+
+|     |  Line  ||
+|Num overlapping | AAAA | HHHH"
+|:------:| :-----:|:-----:|
+| **Two**   | 415 | 432 |
+| **Three** | 253 | 271 |
+| **Four**  | 138 | 146 |
+
+
+**87 are consistent across all lines.**
+
+I'd think that these 87 are regions that probably started at low het. However, the similar overlap between the sets suggests that there isn't really a signal of reduced het in HHHH vs AAAA. 
 
 
 
