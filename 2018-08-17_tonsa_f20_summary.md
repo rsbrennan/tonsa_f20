@@ -32,6 +32,8 @@ Across the genome, there is no reduction in Hp in the HHHH line.
 
 ![alt text](https://raw.githubusercontent.com/rsbrennan/tonsa_f20/master/figures/heterozygosity.png)
 
+<img src="https://raw.githubusercontent.com/rsbrennan/tonsa_f20/master/figures/heterozygosity.png" width="80">
+
 
 The low end of quantiles also do not differ:
 
