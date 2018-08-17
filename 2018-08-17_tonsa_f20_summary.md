@@ -45,8 +45,7 @@ Looking at the lower 0.05 quantile of heterozygosity for each line. So lowest 39
 
 The follwoing table is the number of genes that overlap between 2, 3, or 4 lines in both
 
-|     |  Line  ||
-|Num overlapping | AAAA | HHHH|
+| Shared between N reps | AAAA | HHHH|
 |:------:| :-----:|:-----:|
 | **Two**   | 415 | 432 |
 | **Three** | 253 | 271 |
