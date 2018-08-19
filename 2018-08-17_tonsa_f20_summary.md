@@ -1,5 +1,11 @@
 # tonsa_f20 summary
 
+## PCA
+
+
+<img src="https://raw.githubusercontent.com/rsbrennan/tonsa_f20/master/figures/pca.png" width="500">
+
+
 
 ## heterozygosity
 
