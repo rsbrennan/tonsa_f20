@@ -63,9 +63,48 @@ The follwoing table is the number of genes that overlap between 2, 3, or 4 lines
 I'd think that these 87 are regions that probably started at low het. However, the similar overlap between the sets suggests that there isn't really a signal of reduced het in HHHH vs AAAA. 
 
 
-## pi in 1kb windows
+## pi in across genes windows
 
 Want to make sure my analysis above doesn't substantially change when using a different approach.
+
+Here, I estimated pi with popoolation. Min depth =20, window size= whole gene
+
+
+| Line    |  mean pi  |
+|:------:| :-----:|
+| AAAA_F1_REP1 | 0.0143 |
+| AAAA_F1_REP2 | 0.0145 |
+| AAAA_F1_REP3 | 0.0150 |
+| AAAA_F1_REP4 | 0.0149 |
+| HHHH_F1_REP1 | 0.0151 |
+| HHHH_F1_REP2 | 0.0147 |
+| HHHH_F1_REP3 | 0.0143 |
+| HHHH_F1_REP4 | 0.0145 |
+
+
+Overall: no differences.
+
+<img src="https://raw.githubusercontent.com/rsbrennan/tonsa_f20/master/figures/gene.pi.hist.png" width="500">  
+
+<img src="https://raw.githubusercontent.com/rsbrennan/tonsa_f20/master/figures/gene.pi01_quantile.png" width="500">  
+
+<img src="https://raw.githubusercontent.com/rsbrennan/tonsa_f20/master/figures/gene.pi05_quantile.png" width="500">  
+
+Looking at the lower 0.05 quantile of pi for each line. 3,579 genes included
+
+The follwoing table is the number of genes that overlap between 2, 3, or 4 lines in both
+
+| Shared between N reps | AAAA | HHHH|
+|:------:| :-----:|:-----:|
+| **Two**   | 196 | 193 |
+| **Three** | 135 | 138 |
+| **Four**  | 90  | 92 |
+
+
+**67 are consistent across all lines- both AAAA and HHHH.**
+
+
+## pi in 1kb windows
 
 Here, I estimated pi with popoolation. Min depth =20, window size of 1kb, step size of 500bp where the minimum covered fraction is 0.4.
 
@@ -93,7 +132,7 @@ Overall: no differences.
 
 
 
-Looking at the lower 0.01 quantile of heterozygosity for each line.  5799 windows total. 
+Looking at the lower 0.01 quantile of pi for each line.  5799 windows total. 
 
 The follwoing table is the number of genes that overlap between 2, 3, or 4 lines in both
 
