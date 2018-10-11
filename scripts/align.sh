@@ -10,7 +10,7 @@ my_samblstr=~/bin/samblaster/samblaster
 
 cd ~/reciprocal_t/data/trimmed/
 
-for sample in `ls ~/reciprocal_t/data/trimmed | grep '.fq.gz' | cut -f 1-3 -d "_"| uniq | grep 'AAAA\|HHHH'| grep 'F1'
+for sample in `ls ~/reciprocal_t/data/trimmed | grep '.fq.gz' | cut -f 1-3 -d "_"| uniq | grep -v 'AAAA\|HHHH'
 `
 do
 
@@ -29,7 +29,7 @@ do
 
     rg=$(echo \@RG\\tID:$sample\\tPL:Illumina\\tPU:x\\tLB:$lib1\\tSM:$sample)
 
-    $my_bwa mem -t 8 -R $rg $bwagenind $lane1_1 $lane1_2 | \
+    $my_bwa mem -t 4 -R $rg $bwagenind $lane1_1 $lane1_2 | \
     $my_samblstr |\
     $my_samtools view -h -u - | \
     $my_samtools sort - -O bam -o ~/tonsa_f20/data/aligned/${lib1}.bam
@@ -41,7 +41,7 @@ do
 
     rg=$(echo \@RG\\tID:$sample\\tPL:Illumina\\tPU:x\\tLB:$lib2\\tSM:$sample)
 
-    $my_bwa mem -t 8 -R $rg $bwagenind $lane2_1 $lane2_2 | \
+    $my_bwa mem -t 4 -R $rg $bwagenind $lane2_1 $lane2_2 | \
     $my_samblstr |\
     $my_samtools view -h -u - | \
     $my_samtools sort - -O bam -o ~/tonsa_f20/data/aligned/${lib2}.bam
